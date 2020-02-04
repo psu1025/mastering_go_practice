@@ -14,4 +14,7 @@ func main() {
 
 	fmt.Println("avg all cmd variables")
 	fmt.Println(cmdcalc.AvgAllVariable(argsWithoutProg))
+
+	fmt.Println("echo parameters until STOP")
+	cmdcalc.EchoParameters(argsWithoutProg)
 }
