@@ -4,9 +4,13 @@ import "testing"
 
 func Test_AddAllVariable(t *testing.T) {
 	numstrings := []string{"1", "2", "3", "ㄱ"}
-	sum := AddAllVariable(numstrings)
+	var total, length = AddAllVariable(numstrings)
 
-	if sum != 6 {
+	if total != 6 {
 		t.Fatal("1+2+3 == 6")
+	}
+
+	if length != 3 {
+		t.Fatal("length must be 3")
 	}
 }
